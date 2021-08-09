@@ -1,0 +1,22 @@
+// Pass binary input string as argument while execting
+
+#include<iostream>
+#include<strings.h>
+
+using namespace std;
+
+class Solution {
+public:
+    uint32_t reverseBits(uint32_t n) {
+	string bin_n = to_string(n);
+	bin_n = string(bin_n.rbegin(), bin_n.rend());
+	return stoll(bin_n);
+    }
+};
+
+
+int main(int argc, char *argv[]){
+	Solution s;
+	cout << s.reverseBits(uint32_t(stoll(argv[1]))) << endl;
+	return 0;
+}
