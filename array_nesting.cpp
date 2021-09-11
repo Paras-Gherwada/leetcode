@@ -8,7 +8,7 @@ class Solution {
 public:
     int arrayNesting(vector<int>& nums) {
 
-        vector<int> val_counter(n, 0);
+        vector<int> val_counter(nums.size(), 0);
         int outer_idx, inner_idx, primary_counter, temporary_counter;
 	outer_idx = inner_idx = primary_counter = temporary_counter =  0;
 
