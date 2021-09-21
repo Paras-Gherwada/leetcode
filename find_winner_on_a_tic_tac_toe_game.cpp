@@ -31,7 +31,7 @@ public:
     }
 
     string tictactoe(vector<vector<int>>& moves) {
-        string result = "Pending", marker = "B";
+	        string result = "Pending", marker = "B";
 		int counter = 0;
 
 		int board[3][3] = {
@@ -44,6 +44,7 @@ public:
 			for(vector<int> pos : moves) {
 				marker = (marker == "B") ? "A" : "B";
 				board[pos[0]][pos[1]] = marker[0];
+				// printboard(board);
 				result = (counter < 9) ? (isLine(board) ? marker : "Pending") : "Draw";
 				++counter;
 			}
