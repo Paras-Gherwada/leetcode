@@ -7,8 +7,7 @@ using namespace std;
 class Solution {
 public:
     int findLucky(vector<int>& arr) {
-		int max_ele = *max_element(arr.begin(), arr.end());
-        int size  = max_ele + 1;
+        int size  = *max_element(arr.begin(), arr.end()) + 1;
 		vector<int> lucky(size, 0);
 
 // 		cout << endl << "Size : " << size;
