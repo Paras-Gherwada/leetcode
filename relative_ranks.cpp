@@ -5,8 +5,7 @@ public:
         for(int val : score)
             copy_score.push_back(val);
         
-        sort(copy_score.begin(), copy_score.end());
-        reverse(copy_score.begin(), copy_score.end());
+        sort(copy_score.begin(), copy_score.end(), greater<>());
         
         map<int, string> mapper;
         int counter = 1;
